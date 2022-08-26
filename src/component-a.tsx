@@ -1,3 +1,10 @@
 import React from 'react'
 
-export const ComponentA: React.FC = () => <div>Component A</div>
+import { ComponentB } from './component-b'
+
+export const ComponentA: React.FC = () => (
+  <div>
+    Component A
+    <ComponentB />
+  </div>
+)
