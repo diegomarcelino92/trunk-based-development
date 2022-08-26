@@ -1,5 +1,3 @@
 import React from 'react'
 
-export const App: React.FC = () => {
-  return <div>Main App</div>
-}
+export const App: React.FC = () => <div>APP - 1</div>
