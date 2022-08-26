@@ -1,12 +1,12 @@
-name: 'Continous Integration'
+name: 'CD - Production'
 
 on:
-  pull_request:
-    branches:
-      - main
+  push:
+    tags:
+      - v*
 
 jobs:
-  Tests:
+  production-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
